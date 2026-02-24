@@ -31,27 +31,29 @@
                 </ul>
             </nav>
             
-            <div id="weekly">
+            <div id="rightcol">
                 <h2>WEEKLY FAVS</h2>
                     <p>Here are some featured favs
                         from the last week...
                     </p>
 
-                    <div align=center><img src="tempimg.png"></div>
-                    <h3>"Album Name"</h3>
-                    <p><em>John Doe, 42, United States</em>
+                    <div class="centeredimg"><img src="album1.png"></div>
+                    <h3>"Rumours"</h3>
+                    <p>Oliver Waijers, 20, the Netherlands
                         <br>
-                        Favorite Track: "Song Name"
+                        Favorite Track: "You Make Loving Fun"
                     </p>
-                    <p>"Insert Blurb Here"</p>
+                    <p><em>"You Make Loving Fun is my favorite track because it
+                        reminds me of my boyfriend."</em></p>
 
-                    <div align=center><img src="tempimg.png"></div>
-                    <h3>"Album Name"</h3>
-                    <p><em>John Doe, 42, United States</em>
+                    <div class="centeredimg"><img src="album2.png"></div>
+                    <h3>"Skeletá"</h3>
+                    <p>Frankie Dees, 19, United States
                         <br>
-                        Favorite Track: "Song Name"
+                        Favorite Track: "Excelsis"
                     </p>
-                    <p>"Insert Blurb Here"</p>
+                    <p><em>"I had to put this here. Something had to go here.
+                        You know how it is."</em></p>
 
             </div>
 
@@ -72,21 +74,43 @@
                     </p>
                     <p>So! Pick one and get started!
                     </p>
-                    <div align="right"><img src="cool graphic.png" height="120px"></div>
+                    <div class="centeredimg"><img src="cool graphic.png" height="110px"></div>
             </main>
 
-            <div id="form">
+            <div id="bottomrow">
                 <h2>SEND IN YOUR FAVS</h2>
-                    <p>Do you like music as much as me? Do you have a favorite album
-                        you'd like to see featured on this site? Boy, are you in the right place!
-                     </p>
-                    <p>Use this form to submit your favorite album and get featured in
-                        our "Weekly Favs" section!
-                    </p>
-                    <p>Please input your: 1) Name 2) Age 3) Country 4) Favorite Album 5) Favorite Track
-                        <br>
-                        <em><strong>OPTIONAL:</strong> You may also submit a short blurb about why it's your favorite.</em>
+                    <small>
+                        <p>Do you like music as much as me? Do you have a favorite album
+                            you'd like to see featured on this site? Boy, are you in the right place!
+                        </p>
+                        <p>Use this form to submit your favorite album and get featured in
+                            our "Weekly Favs" section!
+                        </p>
+                        <p>Please input your: 1) Name 2) Age 3) Country 4) Favorite Album 5) Favorite Track
+                            <br>
+                            <em><strong>OPTIONAL:</strong> You may also submit a short blurb about why it's your favorite (75 character
+                                limit).</em>
+                    </small>
+                    
+                        <hr>
 
+                        <form method="post" action="#">
+                            <label for="myFName">*First Name:</label>
+                            <input type="text" id="myFName" name="myFName" required>
+                            <label for="myLName">Last Name:</label>
+                            <input type="text" id="myLName" name="myLName">
+                            <label for="myAge">*Age:</label>
+                            <input type="number" id="myAge" name="myAge" min="1" required>
+                            <label for="myCountry">*Country:</label>
+                            <input type="text" id="myCountry" name="myCountry" required>
+                            <label for="myFavAlbum">*Fav Album:</label>
+                            <input type="text" id="myFavAlbum" name="myFavAlbum" required>
+                            <label for="myFavTrack">*Fav Track:</label>
+                            <input type="text" id="myFavTrack" name="myFavTrack" required>
+                            <label for="myComments">Comments:</label>
+                            <textarea id="myComments" name="myComments" rows="5" cols="30" maxlength="75"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
             </div>
         
             <footer>
